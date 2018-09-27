@@ -23,6 +23,7 @@ class SimpleAdminServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->make('CUONGNQ\SimpleAdmin\CuongController');
+        $this->loadViewsFrom(__DIR__.'/views', 'package');
     }
 }
